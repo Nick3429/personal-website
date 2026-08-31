@@ -95,9 +95,13 @@ export const useSmoothScroll = () => {
                 e.preventDefault();
                 const href = anchor.getAttribute('href');
                 if (href) {
-                    const targetElement = document.querySelector(href);
+                    const targetElement = document.querySelector(href) as HTMLElement | null;
                     if (targetElement) {
-                        const offsetTop = (targetElement as HTMLElement).offsetTop -80;
+                        const navbar = document.getElementById('navbar');
+                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                        const title = targetElement.querySelector('.section-title') as HTMLElement | null;
+                        const scrollTarget = title ?? targetElement;
+                        const offsetTop = scrollTarget.getBoundingClientRect().top + window.scrollY - navbarHeight - 16;
                         window.scrollTo({
                             top: offsetTop,
                             behavior: 'smooth'
