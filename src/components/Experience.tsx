@@ -18,6 +18,17 @@ const experienceData: ExperienceEntry[] = [
         ]
     },
     {
+        id: 'princeton-2025-2026',
+        title: 'Director of Hockey Operations',
+        company: 'Princeton Men\'s Hockey',
+        date: '2025-2026',
+        responsibilities: [
+            'Live-tagged and clipped key in-game scenarios to enable rapid access to critical plays, supporting real-time coaching adjustments during intermissions and post-game film analysis',
+            'Produced weekly data-driven scouting reports on opponents, directly informing game strategy and preparation',
+            'Produced player scouting decks and sent to NHL scouts and assistant general managers to aid their evaluation process'
+        ]
+    },
+    {
         id: 'blues-2024',
         title: 'Analytics Intern (Volunteer)',
         company: 'St. Louis Blues',
