@@ -23,18 +23,19 @@ const experienceData: ExperienceEntry[] = [
         company: 'Princeton Men\'s Hockey',
         date: '2025-2026',
         responsibilities: [
-            'Live-tagged and clipped key in-game scenarios to enable rapid access to critical plays, supporting real-time coaching adjustments during intermissions and post-game film analysis',
-            'Produced weekly data-driven scouting reports on opponents, directly informing game strategy and preparation',
-            'Produced player scouting decks and sent to NHL scouts and assistant general managers to aid their evaluation process'
+            'Live-tagged and clipped key in-game scenarios using Catapult Focus, leveraging a custom key-binding template to accelerate live tagging speed and precision, enabling rapid access to critical plays for real-time coaching adjustments during intermissions and post-game film analysis',
+            'Compiled weekly data-driven scouting reports on opponents by analyzing shot heat maps and metrics such as zone entries, scoring-chance play types for and against, and faceoff tendencies sourced from Sportlogiq and InStat, directly informing game strategy and preparation',
+            'Produced player scouting decks for NHL scouts and assistant general managers to support their evaluation process, directly contributing to a player earning a professional contract and advancing to play professional hockey',
+            'Responsible for advising coaching staff in real time on when to initiate a coach\'s challenge, directly impacting the outcome of games'
         ]
     },
     {
         id: 'blues-2024',
-        title: 'Analytics Intern (Volunteer)',
+        title: 'Analytics Volunteer Intern',
         company: 'St. Louis Blues',
         date: 'Summer 2024',
         responsibilities: [
-            'Enhanced the St. Louis Blues database with historical salary cap data by web scraping player salary data off CapFriendly using Python packages like bs4, Selenium, and Requests'
+            'Enhanced the St. Louis Blues database with historical salary cap and trade data, web scraping player salaries and past trade transactions off CapFriendly using Python packages including bs4, Selenium, and Requests, establishing comparables to support evaluation of future trade scenarios'
         ]
     },
     {
