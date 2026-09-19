@@ -1,6 +1,6 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 
-export const useCarousel = (totalItems: number, autoRotateDelay: number = 3000) => {
+export const useCarousel = (totalItems: number) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = useCallback (() => {
@@ -14,11 +14,6 @@ export const useCarousel = (totalItems: number, autoRotateDelay: number = 3000) 
     const goToSlide = useCallback ((index: number) => {
         setCurrentIndex(index);
     }, []);
-
-    useEffect (() => {
-        const interval = setInterval(nextSlide, autoRotateDelay);
-        return () => clearInterval(interval);
-    }, [nextSlide, autoRotateDelay]);
 
     return {
         currentIndex,

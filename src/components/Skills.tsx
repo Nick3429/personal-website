@@ -41,7 +41,7 @@ const skillsData: Skillcard[] = [
 ];
 
 const Skills = () => {
-    const { currentIndex, nextSlide, prevSlide } = useCarousel(skillsData.length, 3000);
+    const { currentIndex, nextSlide, prevSlide } = useCarousel(skillsData.length);
 
     const getCardClass = (index: number) => {
         const totalCards = skillsData.length;
