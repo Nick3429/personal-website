@@ -41,7 +41,7 @@ const Hero = () => {
                         <span className="hero-greeting">Hi, I'm</span>
                         <span className="hero-name">Nick Sofianakos</span>
                     </h1>
-                    <p className="tagline">Consultant | Developer | Data Scientist | Problem Solver</p>
+                    <p className="tagline">Consultant | Developer | Problem Solver</p>
                     <div className="social-links">
                         <a href="https://www.linkedin.com/in/nick-sofianakos/" title = "LinkedIn">
                         <img src = {linkedinIcon} alt="LinkedIn" width="24" height ="24" />
