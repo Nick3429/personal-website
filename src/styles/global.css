@@ -642,7 +642,6 @@ section:nth-child(event) {
   border-radius: 10px;
   backdrop-filter: blur(10px);
   transition: all 0.3s cubic-bezier(0.18, 0.9, 0.32, 1);
-  cursor: pointer;
   opacity: 1;
   transform: scale(1);
   text-align: center;
@@ -660,10 +659,6 @@ section:nth-child(event) {
 .cert-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(255, 255, 255, 0.7);
-}
-
-.cert-item:active {
-  transform: translateY(2px) scale(0.97);
 }
 
 .cert-item h3 {
@@ -690,16 +685,11 @@ section:nth-child(event) {
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s cubic-bezier(0.18, 0.9, 0.32, 1);
-  cursor: pointer;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(255, 255, 255, 0.7);
-}
-
-.project-card:active {
-  transform: translateY(2px) scale(0.97);
 }
 
 .project-header {
