@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { Certification } from '../types';
 import databricksIcon from '../assets/icons/icons8-databricks-48.png';
 import azureIcon from '../assets/icons/icons8-azure-48.png';
+import chatgptIcon from '../assets/icons/icons8-chatgpt-50.png';
 
 const certificationsData: Certification[] = [
     {
@@ -46,9 +47,16 @@ const certificationsData: Certification[] = [
         issuer: 'DP-900',
         year: '2025'
     },
+    {
+        category: 'openai',
+        icon: chatgptIcon,
+        title: 'Consultative Solutions Practitioner',
+        issuer: 'OpenAI',
+        year: '2026'
+    },
 ];
 
-type FilterType = 'all' | 'microsoft' | 'databricks';
+type FilterType = 'all' | 'microsoft' | 'databricks' | 'openai';
 
 const Certifications = () => {
     const [activeFilter, setActiveFilter] = useState<FilterType>('all');
@@ -81,6 +89,13 @@ const Certifications = () => {
                     onClick={() => setActiveFilter('databricks')}
                 >
                     Databricks
+                </button>
+                <button
+                    className={`filter-btn ${activeFilter ==='openai' ? 'active' : ''}`}
+                    data-filter="openai"
+                    onClick={() => setActiveFilter('openai')}
+                >
+                    OpenAI
                 </button>
             </div>
             <div className="cert-container">

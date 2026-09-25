@@ -7,7 +7,7 @@ export interface Skillcard {
 }
 
 export interface Certification {
-    category: 'microsoft' | 'databricks';
+    category: 'microsoft' | 'databricks' | 'openai';
     icon: string;
     title: string;
     issuer: string;
