@@ -54,6 +54,13 @@ const certificationsData: Certification[] = [
         issuer: 'OpenAI',
         year: '2026'
     },
+    {
+        category: 'openai',
+        icon: chatgptIcon,
+        title: 'Technical Practitioner',
+        issuer: 'OpenAI',
+        year: '2026'
+    },
 ];
 
 type FilterType = 'all' | 'microsoft' | 'databricks' | 'openai';
